@@ -51,6 +51,6 @@ jobs:
         with:
           context: ./eWeLink_Smart_Home
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ github.run_id }}
+          tags: ${{ github.run_number }}
+          labels: ${{ github.run_number }}
 
